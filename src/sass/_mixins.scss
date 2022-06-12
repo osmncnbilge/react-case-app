@@ -7,6 +7,12 @@
   }
 }
 
+@mixin smMaxBreakPoint {
+  @media (max-width: #{$screen-sm}) {
+    @content;
+  }
+}
+
 @mixin mdMinBreakPoint {
   @media (min-width: #{$screen-md}) {
     @content;
@@ -35,4 +41,11 @@
   @media (max-width: #{$size}px) {
     @content;
   }
+}
+
+@mixin contaier {
+  width: 100%;
+  max-width: $screen-xl;
+  margin: 0 auto;
+  padding: 0 20px;
 }

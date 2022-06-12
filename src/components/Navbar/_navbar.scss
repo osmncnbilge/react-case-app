@@ -1,0 +1,24 @@
+@import "../../sass//mixins";
+@import "../../sass//variables";
+
+.container {
+  @include contaier;
+  display: flex;
+  height: 90px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 30px;
+  & > img {
+    width: 163px;
+    height: 32px;
+  }
+
+  @include smMaxBreakPoint {
+    height: 70px;
+    & > img {
+      width: 115px;
+      height: 25px;
+    }
+  }
+}
