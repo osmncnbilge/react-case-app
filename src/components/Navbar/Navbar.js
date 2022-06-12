@@ -6,20 +6,20 @@ import "./_navbar.scss";
 function Navbar() {
   return (
     <>
-      <div className="container">
-        <img src="/assets/logo.svg" alt="logo" />
+      <div className="container navbar">
+        <img src="/assets/images/logo.svg" alt="logo" />
         <SearchInput />
         <Sepet />
       </div>
       <div
         className="header"
         style={{
-          backgroundImage: "url(/assets/header_bg.png)",
+          backgroundImage: "url(/assets/images/header_bg.png)",
         }}
       >
-        <div>ÇiçekSepeti</div>
+        <div className="container">ÇiçekSepeti</div>
       </div>
-      <div className="breadcrumb">
+      <div className="container breadcrumb">
         <span>CiceksepetiBreadCrumb</span>
         <span>{">"}</span>
         <span>İstanbul</span>

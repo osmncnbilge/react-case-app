@@ -5,12 +5,12 @@ function Sepet() {
   return (
     <>
       <div className="sepet-container">
-        <img src="/assets/sepet_icon.svg" alt="sepet" />
+        <img src="/assets/images/sepet_icon.svg" alt="sepet" />
         Sepetim
         <div className="sepet-badge">2</div>
         <div className="sepet-info">
           <div className="info-text">
-            <img src="/assets/simsek_icon.svg" alt="simsek_icon" />
+            <img src="/assets/images/simsek_icon.svg" alt="simsek_icon" />
             <span>50 TL</span> ürün daha ekleyin kargo bedava
           </div>
           <div className="info-bar-container">

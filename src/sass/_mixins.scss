@@ -60,10 +60,3 @@
     @content;
   }
 }
-
-@mixin contaier {
-  width: 100%;
-  max-width: $screen-xl;
-  margin: 0 auto;
-  padding: 0 20px;
-}

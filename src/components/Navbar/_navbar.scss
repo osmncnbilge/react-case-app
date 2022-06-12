@@ -1,8 +1,7 @@
 @import "../../sass//mixins";
 @import "../../sass//variables";
 
-.container {
-  @include contaier;
+.navbar {
   display: grid;
   grid-template-rows: 40px;
   grid-template-columns: 2fr 9fr 1fr;
@@ -41,11 +40,10 @@
 
 .header {
   height: 74px;
-  margin-top: 10px;
+  margin-top: 10px !important;
   display: flex;
   align-items: center;
   & > div {
-    @include contaier;
     background: transparent;
     font-size: 35px;
     color: #fff;
@@ -60,7 +58,7 @@
 
   @include mdMaxBreakPoint {
     height: 50px;
-    margin-top: 5px;
+    margin-top: 5px !important;
 
     & > div {
       font-size: 20px;
@@ -69,8 +67,7 @@
 }
 
 .breadcrumb {
-  @include contaier;
-  margin-top: 5px;
+  margin-top: 5px !important;
   color: $textColor;
   display: flex;
   column-gap: 5px;
