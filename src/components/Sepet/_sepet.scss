@@ -11,10 +11,18 @@
   column-gap: 3px;
   font-size: 13px;
   position: relative;
+  grid: sepet;
 
   & > img {
     height: 20px;
     width: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    & > .sepet-info {
+      visibility: visible;
+    }
   }
 
   @include smMaxBreakPoint {
@@ -24,6 +32,10 @@
       height: 15px;
       width: 15px;
     }
+  }
+
+  @include mdMaxBreakPoint {
+    padding: 8px;
   }
 }
 
@@ -64,6 +76,7 @@
   align-items: center;
   flex-direction: column;
   row-gap: 5px;
+  visibility: hidden;
 
   @include smMaxBreakPoint {
     width: 225px;
@@ -85,12 +98,22 @@
   }
 
   & > .info-text {
+    display: flex;
+    align-items: center;
     & > img {
       width: 13px;
       height: 13px;
     }
     & > span {
       color: #ffce00;
+      padding-right: 2px;
+    }
+
+    @include smMaxBreakPoint {
+      & > img {
+        width: 10px;
+        height: 10px;
+      }
     }
   }
 

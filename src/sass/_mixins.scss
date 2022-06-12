@@ -19,14 +19,32 @@
   }
 }
 
+@mixin mdMaxBreakPoint {
+  @media (max-width: #{$screen-md}) {
+    @content;
+  }
+}
+
 @mixin lgMinBreakPoint {
   @media (min-width: #{$screen-lg}) {
     @content;
   }
 }
 
+@mixin lgMaxBreakPoint {
+  @media (max-width: #{$screen-lg}) {
+    @content;
+  }
+}
+
 @mixin xlMinBreakPoint {
   @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+
+@mixin xlMaxBreakPoint {
+  @media (max-width: #{$screen-xl}) {
     @content;
   }
 }

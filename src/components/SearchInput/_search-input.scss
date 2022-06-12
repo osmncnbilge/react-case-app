@@ -1,7 +1,10 @@
+@import "../../sass//mixins";
+
 .search-input-container {
   display: block;
   width: 100%;
   position: relative;
+  grid-area: input;
 
   & > img {
     position: absolute;
@@ -9,6 +12,13 @@
     top: 12px;
     width: 15px;
     height: 15px;
+  }
+
+  @include mdMaxBreakPoint {
+    & > img {
+      left: 11px;
+      top: 10px;
+    }
   }
 }
 
@@ -19,6 +29,9 @@
   outline: 0;
   padding: 10px 10px 10px 35px;
   width: 100%;
+  @include mdMaxBreakPoint {
+    padding: 8px 8px 8px 32px;
+  }
 }
 
 .search-button {
@@ -35,5 +48,10 @@
   &:hover {
     cursor: pointer;
     filter: brightness(75%);
+  }
+
+  @include mdMaxBreakPoint {
+    width: 50px;
+    height: 27px;
   }
 }
