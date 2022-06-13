@@ -20,9 +20,6 @@
 
   &:hover {
     cursor: pointer;
-    & > .sepet-info {
-      visibility: visible;
-    }
   }
 
   @include smMaxBreakPoint {
@@ -76,7 +73,6 @@
   align-items: center;
   flex-direction: column;
   row-gap: 5px;
-  visibility: hidden;
 
   @include smMaxBreakPoint {
     width: 225px;
