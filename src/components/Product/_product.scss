@@ -108,6 +108,10 @@
       justify-content: center;
       align-items: center;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       & > img {
         height: 10px;
         width: 10px;
