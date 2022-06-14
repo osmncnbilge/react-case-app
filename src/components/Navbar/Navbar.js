@@ -3,12 +3,12 @@ import SearchInput from "../SearchInput/SearchInput";
 import Sepet from "../Sepet/Sepet";
 import "./_navbar.scss";
 
-function Navbar() {
+function Navbar({ searchText, handleChange }) {
   return (
     <>
       <div className="container navbar">
         <img src="/assets/images/logo.svg" alt="logo" />
-        <SearchInput />
+        <SearchInput searchText={searchText} handleChange={handleChange} />
         <Sepet />
       </div>
       <div

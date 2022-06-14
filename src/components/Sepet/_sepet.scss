@@ -20,6 +20,9 @@
 
   &:hover {
     cursor: pointer;
+    & > .sepet-info {
+      display: flex;
+    }
   }
 
   @include smMaxBreakPoint {
@@ -57,6 +60,7 @@
 }
 
 .sepet-info {
+  display: none;
   background: #f54257 0% 0% no-repeat padding-box;
   color: #fff;
   text-align: center;
@@ -68,7 +72,6 @@
   right: 0;
   width: 300px;
   height: 50px;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
