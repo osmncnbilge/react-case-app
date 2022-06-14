@@ -1,0 +1,63 @@
+@import "../../sass/variables";
+@import "../../sass//mixins";
+
+.kampanya-container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 10px;
+  & > .kampanya-item {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+    & > img {
+      width: 150px;
+      height: 125px;
+    }
+    & > div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      font: normal normal 300 19px/23px Source Sans Pro;
+      color: $textColor;
+
+      & > button {
+        font: normal normal 600 13px/30px Source Sans Pro;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border-radius: 15px;
+        border: none;
+        color: $warningColor;
+      }
+    }
+  }
+
+  @include lgMaxBreakPoint {
+    & > .kampanya-item {
+      flex-direction: column;
+      row-gap: 10px;
+      & > img {
+        width: 105px;
+        height: 90px;
+      }
+      & > div {
+        font: normal normal 300 16px/20px Source Sans Pro;
+      }
+    }
+  }
+
+  @include mdMaxBreakPoint {
+    & > .kampanya-item {
+      & > img {
+        width: 85px;
+        height: 70px;
+      }
+      & > div {
+        font: normal normal 300 13px/15px Source Sans Pro;
+        & > button {
+          font: normal normal 600 13px/25px Source Sans Pro;
+        }
+      }
+    }
+  }
+}
