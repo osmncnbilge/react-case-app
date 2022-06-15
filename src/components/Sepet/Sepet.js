@@ -20,6 +20,7 @@ function Sepet() {
         <img src="/assets/images/sepet_icon.svg" alt="sepet" />
         Sepetim
         {cart.length > 0 && <div className="sepet-badge"> {cart.length} </div>}
+        {/* Kargo durumu bilgisi hover ile gösteriliyor */}
         <div className="sepet-info">
           {500 - cartTotalPrice > 0 ? (
             <>
